@@ -1,4 +1,3 @@
-/* Reset styles */
 * {
   padding: 0;
   margin: 0;
@@ -47,7 +46,7 @@ header nav .btn {
   cursor: pointer;
   padding: 10px 20px;
   border: 1px solid white;
-  border-radius: 5px;
+  border-radius: 20px;
   background: linear-gradient(rgb(250, 171, 0), rgb(255, 136, 0));
   transition: 0.5s ease-in;
   margin-right: 50px;
@@ -59,4 +58,93 @@ header nav .btn a {
   font-weight: bold;
   color: white;
  
+}
+
+/* Main */
+main .home{
+  background-color: rgba(160, 153, 153, 0.13);
+  display: flex;
+  flex-direction: column;
+  height: 700px;
+
+}
+
+/* Main part-1 */
+main .home .part1{
+  position: absolute;
+  top:200px;
+  left: 200px;
+  
+
+  
+}
+
+/* Main h1 */
+main .home .part1 h1{
+  margin-bottom: 10px;
+  font-size: 4rem;
+  color: rgb(29, 27, 27);
+  font-family: "Anton", serif;
+  font-weight:lighter;
+
+} 
+
+/* Main p */
+main .home .part1 p{
+  margin-bottom: 40px;
+  font-size: 1.5rem;
+  color: rgb(29, 27, 27);
+  font-weight:lighter;
+  font-family: "Montserrat", serif;
+ 
+
+}
+
+/* Main img */
+main .home img{
+  height: 700px;
+  width: 700px ;
+  position: absolute;
+  right: 200px;
+}
+
+/* Main .btn2*/
+main .home .part1 .btn2{
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  font-family: "Montserrat", serif;
+  background: linear-gradient(#faab00, #ff8800);
+  padding: 20px 40px;
+  border-radius: 40px;
+  animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ff8800, 0 0 50px #ff8800, 0 0 60px #ff8800, 0 0 70px #ff8800, 0 0 80px #ff8800;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #faab00, 0 0 40px #faab00, 0 0 50px #faab00, 0 0 60px #faab00, 0 0 70px #faab00, 0 0 80px #faab00;
+  }
+}
+
+main .home .part1 .video{
+  padding-left: 30px;
+  font-weight:700;
+  font-size: large;
+  transition: 0.3s ease-in;
+  cursor: pointer;
+  font-family: "Montserrat", serif;
+}
+
+main .home .part1 .video:hover{
+  color: #faab00;
+}
+
+main .home .part1 .video i{
+  color: #ff8800;
+  padding-right: 10px;
 }
