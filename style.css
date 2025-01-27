@@ -1,0 +1,62 @@
+/* Reset styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  margin: 20px;
+}
+
+/* Logo */
+header #logo {
+ padding-left: 300px;
+ cursor: pointer;
+}
+header #logo span{
+  color: rgb(255, 208, 0);
+}
+
+/* Nav */
+header nav {
+  display: flex;
+  align-items: center; 
+  gap: 20px;
+}
+
+header nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none; 
+  padding-right: 100px;
+}
+
+header nav ul a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+/* Button */
+header nav .btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: linear-gradient(rgb(250, 171, 0), rgb(255, 136, 0));
+  transition: 0.5s ease-in;
+  margin-right: 50px;
+}
+
+
+header nav .btn a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+ 
+}
