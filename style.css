@@ -16,6 +16,8 @@ header {
 header #logo {
  padding-left: 300px;
  cursor: pointer;
+ font-family: "Oswald", serif;
+ font-weight:bold;
 }
 header #logo span{
   color: rgb(255, 208, 0);
@@ -26,6 +28,8 @@ header nav {
   display: flex;
   align-items: center; 
   gap: 20px;
+  font-family: "Oswald", serif;
+  font-weight:bold;
 }
 
 header nav ul {
