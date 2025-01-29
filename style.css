@@ -37,13 +37,23 @@ header nav ul {
   gap: 30px;
   list-style: none; 
   padding-right: 100px;
+  
 }
+
 
 header nav ul a {
   text-decoration: none;
   font-weight: bold;
   color: black;
+  transition: 0.3s ease-in-out;
 }
+
+header nav ul a:hover{
+  transform: scale(1.1);
+  color:rgb(250, 171, 0);
+
+}
+
 
 /* Button */
 header nav .btn {
@@ -52,8 +62,12 @@ header nav .btn {
   border: 1px solid white;
   border-radius: 20px;
   background: linear-gradient(rgb(250, 171, 0), rgb(255, 136, 0));
-  transition: 0.5s ease-in;
+  transition: 0.5s ease;
   margin-right: 50px;
+}
+
+header nav .btn:hover{
+  transform: scale(1.1);
 }
 
 
@@ -110,7 +124,20 @@ main .home img{
   width: 700px ;
   position: absolute;
   right: 200px;
+  animation: move 0.6s ease-in-out infinite alternate;
 }
+
+@keyframes move{
+  from{
+    bottom: 200px;
+  }
+  to{
+    bottom: 150px;
+  }
+}
+
+
+
 
 /* Main .btn2*/
 main .home .part1 .btn2{
