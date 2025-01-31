@@ -79,18 +79,21 @@ header nav .btn a {
 }
 
 /* Main */
+
+
+
 main .home{
   background-color: rgba(160, 153, 153, 0.13);
   display: flex;
   flex-direction: column;
-  height: 700px;
+  height: 800px;
 
 }
 
 /* Main part-1 */
 main .home .part1{
   position: absolute;
-  top:200px;
+  top:300px;
   left: 200px;
   
 
@@ -119,20 +122,22 @@ main .home .part1 p{
 }
 
 /* Main img */
+
+
 main .home img{
   height: 700px;
   width: 700px ;
   position: absolute;
-  right: 200px;
+  right: 150px;
   animation: move 1s ease-in-out infinite alternate;
 }
 
 @keyframes move{
   from{
-    bottom: 200px;
+    bottom: 100px;
   }
   to{
-    bottom: 150px;
+    bottom: 130px;
   }
 }
 
@@ -206,7 +211,8 @@ main .home .part1 .video i{
 }
 
 #about {
-  padding-bottom: 100px;
+  padding-top: 70px;
+  padding-bottom: 200px;
   scroll-behavior: smooth;
 }
 
@@ -270,7 +276,7 @@ main .about .number span{
 main .about .part2{
   position: absolute;
   right:250px;
-  bottom:-650px;
+  bottom:-800px;
 }
 
 main .about .part2 #img2{
@@ -294,4 +300,88 @@ main .about .part2 p i{
   font-size:20px;
   margin-right: 10px;
 }
+
+main .menu{
+  background-color:rgba(0, 0, 0, 0.089) ;
+  scroll-behavior: smooth;
+  padding-top:70px;
+  max-height: 105%;
+}
+
+main .menu .menu-text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Montserrat", serif;
+  font-weight: lighter;
+  
+}
+
+main .menu .menu-text p{
+  color: rgba(23, 23, 24, 0.658);
+  font-size: 1.5rem;
+}
+main .menu .menu-text h1{
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+main .menu .menu-text h1 span{
+  color: #faab00;
+}
+
+
+main .menu img{
+  height: 300px;
+  width: 300px;
+}
+
+main .menu .parent{
+  display: grid;
+  grid-template-columns: 600px 600px 600px;
+  grid-template-rows: 400px 400px 400px;
+}
+main .menu .parent .plate-1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", serif;
+  font-weight: lighter;
+  transition: 0.2s ease-in;
+  padding-left: 100px;
+}
+
+main .menu .parent .plate-1:hover{
+  transform: scale(1.1);
+}
+
+
+main .menu .parent .plate-1 p{
+  margin-bottom: 20px;
+  color: rgba(23, 23, 24, 0.658);
+  font-size: 1.2rem;
+}
+
+main .menu .parent .plate-1 h3{
+  color: #ff8800;
+}
+
+main .menu .parent .plate-1 {
+    animation: fadeIn 0.5s ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+
+
 
