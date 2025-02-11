@@ -72,7 +72,7 @@ if (isset($_POST['submit'])) {
       </div>
       <div id="videoContainer" class="hidden">
         <video controls>
-          <source src="/video/Timeline 1.mp4" type="video/mp4">
+          <source src="video/Timeline 1.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
