@@ -21,7 +21,9 @@ if (isset($_POST['submit'])) {
             VALUES ('$name', '$email', '$phone', '$date', '$hour', '$people', '$message')";
 
     if ($con->query($sql) === TRUE) {
-        echo "Booking successfully made!";
+      
+      echo "<script>alert('Booking Successful!');</script>";
+      
     } else {
         echo "Error: " . $sql . "<br>" . $con->error;
     }
@@ -74,14 +76,14 @@ if (isset($_POST['submit'])) {
           Your browser does not support the video tag.
         </video>
       </div>
-        <img src="/img/plate.png" alt="">
+        <img src="img/everything/plate.png" alt="">
       
     </section>
 
     <section id="about" class="about">
       <p id="head">ABOUT US</p>
       <h1>LEARN MORE <span> ABOUT US</span></h1>
-      <img id="img1" src="/img/about.jpg" alt="">
+      <img id="img1" src="img/everything/about.jpg" alt="">
       <div class="number">
         <h2>Book a Table <br><span>+212 6009765998</span></h2>
       </div>
@@ -94,7 +96,7 @@ if (isset($_POST['submit'])) {
         <p><i class="fa-solid fa-circle-check"></i>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis <br>aute irure dolor in reprehenderit in voluptate trideta <br>storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
         <br>
         <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis <br>aute irure dolor in reprehenderit in voluptate trideta <br>storacalaperda mastiro dolore eu fugiat nulla pariatur.</p>
-        <img id="img2" src="/img/about-2.jpg" alt="">
+        <img id="img2" src="img/everything/about-2.jpg" alt="">
       </div>
 
     </section>
@@ -143,17 +145,17 @@ if (isset($_POST['submit'])) {
       <h1>MEET <span>OUR CHEFS</span></h1>
       <div class="chef-info">
         <div class="chef-card">
-          <img src="/img/chef 1.png" alt="Chef 1">
+          <img src="img/everything/chef 1.png" alt="Chef 1">
           <h3>Chef One</h3>
           <p>With over 20 years of experience, Chef One is passionate about creating innovative dishes that leave a lasting impression.</p>
         </div>
         <div class="chef-card">
-          <img src="/img/chef 1.png" alt="Chef 2">
+          <img src="img/everything/chef 1.png" alt="Chef 2">
           <h3>Chef Two</h3>
           <p>Chef Two specializes in unique flavor combinations and modern culinary techniques.</p>
         </div>
         <div class="chef-card">
-          <img src="/img/chef 1.png" alt="Chef 3">
+          <img src="img/everything/chef 1.png" alt="Chef 3">
           <h3>Chef Three</h3>
           <p>Chef Three brings an artistic touch to traditional dishes with a focus on presentation.</p>
         </div>
@@ -163,7 +165,7 @@ if (isset($_POST['submit'])) {
     <section id="booking" class="booking-section">
       <div class="booking-container">
           <div class="image-container">
-              <img src="/img/table.jpeg" alt="Restaurant" class="booking-image">
+              <img src="img/everything/table.jpeg" alt="Restaurant" class="booking-image">
           </div>
           <div class="form-container">
               <h1>Book a Table</h1>
@@ -210,9 +212,9 @@ if (isset($_POST['submit'])) {
             </ul>
         </div>
         <div class="footer-social">
-            <a href="#" class="social-icon"><img src="/icons/facebook" alt="Facebook"></a>
-            <a href="#" class="social-icon"><img src="/icons/twitter" alt="Twitter"></a>
-            <a href="#" class="social-icon"><img src="/icons/insta" alt="Instagram"></a>
+            <a href="#" class="social-icon"><img src="icons/facebook" alt="Facebook"></a>
+            <a href="#" class="social-icon"><img src="icons/twitter" alt="Twitter"></a>
+            <a href="#" class="social-icon"><img src="icons/insta" alt="Instagram"></a>
         </div>
     </div>
 </footer>
